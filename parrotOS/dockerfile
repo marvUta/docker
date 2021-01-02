@@ -2,7 +2,13 @@
 FROM parrotsec/core:rolling
 
 #Install components
+<<<<<<< HEAD
 RUN apt-get update; apt-get -y dist-upgrade;apt-get -y install parrot-pico;apt-get -y install parrot-mini parrot-tools-cloud; apt install xrdp; rm -rf /var/lib/apt/lists/*; service start xrdp
 
 #Expose xrdp port
 EXPOSE 3390/tcp
+=======
+RUN apt-get update; apt-get -y dist-upgrade;apt-get -y install parrot-pico;apt-get -y install parrot-mini parrot-tools-cloud; rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT bash $@
+>>>>>>> 9def9c6aba76a4dcf1513d35deee9167b8b1b5d1

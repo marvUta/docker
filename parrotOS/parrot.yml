@@ -1,0 +1,9 @@
+#Docker-Compose-File
+version: "3.8"
+services:
+    parrot:
+        build: .
+        ports: 
+          - "3390:3390"
+        image: "parrotsec/core:rolling"
+        command: apt install xrdp && service xrdp start
