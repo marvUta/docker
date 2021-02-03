@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # docker
 Containing Dockerfiles and dockercompose-files
 =======
@@ -17,4 +16,3 @@ docker-compose -f <filename> up -d
 -f Specify filename
 -d detach container
 
->>>>>>> 9def9c6aba76a4dcf1513d35deee9167b8b1b5d1
